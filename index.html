@@ -1,8 +1,24 @@
 <! DOCTYPE html> 
 <html>
+    <head>
+       <title>Leaflet Map</title>
+  
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    </head>
 <body>
     <img src=" funkmapster.github.io/FunkMapsterLogo.jpg " width =100%>
 <h1>Hello World</h1>
 <p>Check out Surco! It is an awesome organization, doing even more awesome things in Oaxaca, Mexico. <a href="http://www.surcooaxaca.org/index.html">Surco's Website</a>
     or check them out of Facebook <a href="https://www.facebook.com/SURCO-AC-112853728814677/">Surco's Facebook</a></p>
+    <div id="map" style="width: 715px; height: 375px"></div>
+   
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+   <div id="map" style="width: 705px; height: 375px"></div>
+   <script>
+   
+    var map = L.map('map',{ center: [17.048858,-96.725773], zoom: 14});
+
+	var myDataPoint = L.marker([17.048858,-96.725773]).addTo(map);
+
+</script>
 </html>
